@@ -1,0 +1,350 @@
+{
+  "bonus": "historical_backtest",
+  "methodology": "Point-in-time yfinance bars only through each asof date; same two Ollama agents as live run. Accuracy: BUY iff forward close-to-close return > 0; SELL iff < 0; HOLD iff |return| <= hold_band.",
+  "period": {
+    "lookback_calendar_days": 400,
+    "samples_per_ticker_target": 8,
+    "forward_horizon_trading_days": 5,
+    "hold_band_abs_return": 0.005,
+    "run_generated": "2026-04-12"
+  },
+  "strategies": [
+    "Momentum Trader",
+    "Value Contrarian"
+  ],
+  "tickers": [
+    "NVDA",
+    "TSLA",
+    "JNJ",
+    "INTC"
+  ],
+  "strategy_a_hits": 20,
+  "strategy_a_total": 32,
+  "strategy_a_hit_rate": 0.625,
+  "strategy_b_hits": 21,
+  "strategy_b_total": 32,
+  "strategy_b_hit_rate": 0.6562,
+  "more_accurate_overall": "Value Contrarian",
+  "rows": [
+    {
+      "ticker": "NVDA",
+      "asof_date": "2025-06-04",
+      "forward_trading_days": 5,
+      "forward_close_return": 0.006482,
+      "strategy_a_decision": "BUY",
+      "strategy_b_decision": "BUY",
+      "strategy_a_correct": true,
+      "strategy_b_correct": true
+    },
+    {
+      "ticker": "NVDA",
+      "asof_date": "2025-07-18",
+      "forward_trading_days": 5,
+      "forward_close_return": 0.006322,
+      "strategy_a_decision": "BUY",
+      "strategy_b_decision": "BUY",
+      "strategy_a_correct": true,
+      "strategy_b_correct": true
+    },
+    {
+      "ticker": "NVDA",
+      "asof_date": "2025-08-28",
+      "forward_trading_days": 5,
+      "forward_close_return": -0.072987,
+      "strategy_a_decision": "BUY",
+      "strategy_b_decision": "BUY",
+      "strategy_a_correct": false,
+      "strategy_b_correct": false
+    },
+    {
+      "ticker": "NVDA",
+      "asof_date": "2025-10-10",
+      "forward_trading_days": 5,
+      "forward_close_return": 0.000328,
+      "strategy_a_decision": "BUY",
+      "strategy_b_decision": "BUY",
+      "strategy_a_correct": true,
+      "strategy_b_correct": true
+    },
+    {
+      "ticker": "NVDA",
+      "asof_date": "2025-11-21",
+      "forward_trading_days": 5,
+      "forward_close_return": 0.005814,
+      "strategy_a_decision": "BUY",
+      "strategy_b_decision": "BUY",
+      "strategy_a_correct": true,
+      "strategy_b_correct": true
+    },
+    {
+      "ticker": "NVDA",
+      "asof_date": "2026-01-07",
+      "forward_trading_days": 5,
+      "forward_close_return": -0.031569,
+      "strategy_a_decision": "BUY",
+      "strategy_b_decision": "BUY",
+      "strategy_a_correct": false,
+      "strategy_b_correct": false
+    },
+    {
+      "ticker": "NVDA",
+      "asof_date": "2026-02-19",
+      "forward_trading_days": 5,
+      "forward_close_return": -0.016019,
+      "strategy_a_decision": "BUY",
+      "strategy_b_decision": "BUY",
+      "strategy_a_correct": false,
+      "strategy_b_correct": false
+    },
+    {
+      "ticker": "NVDA",
+      "asof_date": "2026-04-02",
+      "forward_trading_days": 5,
+      "forward_close_return": 0.063363,
+      "strategy_a_decision": "BUY",
+      "strategy_b_decision": "BUY",
+      "strategy_a_correct": true,
+      "strategy_b_correct": true
+    },
+    {
+      "ticker": "TSLA",
+      "asof_date": "2025-06-04",
+      "forward_trading_days": 5,
+      "forward_close_return": -0.016925,
+      "strategy_a_decision": "BUY",
+      "strategy_b_decision": "BUY",
+      "strategy_a_correct": false,
+      "strategy_b_correct": false
+    },
+    {
+      "ticker": "TSLA",
+      "asof_date": "2025-07-18",
+      "forward_trading_days": 5,
+      "forward_close_return": -0.041226,
+      "strategy_a_decision": "BUY",
+      "strategy_b_decision": "BUY",
+      "strategy_a_correct": false,
+      "strategy_b_correct": false
+    },
+    {
+      "ticker": "TSLA",
+      "asof_date": "2025-08-28",
+      "forward_trading_days": 5,
+      "forward_close_return": 0.014047,
+      "strategy_a_decision": "BUY",
+      "strategy_b_decision": "BUY",
+      "strategy_a_correct": true,
+      "strategy_b_correct": true
+    },
+    {
+      "ticker": "TSLA",
+      "asof_date": "2025-10-10",
+      "forward_trading_days": 5,
+      "forward_close_return": 0.062444,
+      "strategy_a_decision": "BUY",
+      "strategy_b_decision": "BUY",
+      "strategy_a_correct": true,
+      "strategy_b_correct": true
+    },
+    {
+      "ticker": "TSLA",
+      "asof_date": "2025-11-21",
+      "forward_trading_days": 5,
+      "forward_close_return": 0.099849,
+      "strategy_a_decision": "BUY",
+      "strategy_b_decision": "BUY",
+      "strategy_a_correct": true,
+      "strategy_b_correct": true
+    },
+    {
+      "ticker": "TSLA",
+      "asof_date": "2026-01-07",
+      "forward_trading_days": 5,
+      "forward_close_return": 0.018057,
+      "strategy_a_decision": "BUY",
+      "strategy_b_decision": "BUY",
+      "strategy_a_correct": true,
+      "strategy_b_correct": true
+    },
+    {
+      "ticker": "TSLA",
+      "asof_date": "2026-02-19",
+      "forward_trading_days": 5,
+      "forward_close_return": -0.007602,
+      "strategy_a_decision": "BUY",
+      "strategy_b_decision": "BUY",
+      "strategy_a_correct": false,
+      "strategy_b_correct": false
+    },
+    {
+      "ticker": "TSLA",
+      "asof_date": "2026-04-02",
+      "forward_trading_days": 5,
+      "forward_close_return": -0.03228,
+      "strategy_a_decision": "BUY",
+      "strategy_b_decision": "BUY",
+      "strategy_a_correct": false,
+      "strategy_b_correct": false
+    },
+    {
+      "ticker": "JNJ",
+      "asof_date": "2025-06-04",
+      "forward_trading_days": 5,
+      "forward_close_return": 0.013314,
+      "strategy_a_decision": "BUY",
+      "strategy_b_decision": "BUY",
+      "strategy_a_correct": true,
+      "strategy_b_correct": true
+    },
+    {
+      "ticker": "JNJ",
+      "asof_date": "2025-07-18",
+      "forward_trading_days": 5,
+      "forward_close_return": 0.0281,
+      "strategy_a_decision": "BUY",
+      "strategy_b_decision": "BUY",
+      "strategy_a_correct": true,
+      "strategy_b_correct": true
+    },
+    {
+      "ticker": "JNJ",
+      "asof_date": "2025-08-28",
+      "forward_trading_days": 5,
+      "forward_close_return": 0.016985,
+      "strategy_a_decision": "BUY",
+      "strategy_b_decision": "BUY",
+      "strategy_a_correct": true,
+      "strategy_b_correct": true
+    },
+    {
+      "ticker": "JNJ",
+      "asof_date": "2025-10-10",
+      "forward_trading_days": 5,
+      "forward_close_return": 0.013108,
+      "strategy_a_decision": "BUY",
+      "strategy_b_decision": "BUY",
+      "strategy_a_correct": true,
+      "strategy_b_correct": true
+    },
+    {
+      "ticker": "JNJ",
+      "asof_date": "2025-11-21",
+      "forward_trading_days": 5,
+      "forward_close_return": 0.013456,
+      "strategy_a_decision": "BUY",
+      "strategy_b_decision": "BUY",
+      "strategy_a_correct": true,
+      "strategy_b_correct": true
+    },
+    {
+      "ticker": "JNJ",
+      "asof_date": "2026-01-07",
+      "forward_trading_days": 5,
+      "forward_close_return": 0.053304,
+      "strategy_a_decision": "BUY",
+      "strategy_b_decision": "BUY",
+      "strategy_a_correct": true,
+      "strategy_b_correct": true
+    },
+    {
+      "ticker": "JNJ",
+      "asof_date": "2026-02-19",
+      "forward_trading_days": 5,
+      "forward_close_return": -0.00869,
+      "strategy_a_decision": "BUY",
+      "strategy_b_decision": "BUY",
+      "strategy_a_correct": false,
+      "strategy_b_correct": false
+    },
+    {
+      "ticker": "JNJ",
+      "asof_date": "2026-04-02",
+      "forward_trading_days": 5,
+      "forward_close_return": -0.018845,
+      "strategy_a_decision": "HOLD",
+      "strategy_b_decision": "BUY",
+      "strategy_a_correct": false,
+      "strategy_b_correct": false
+    },
+    {
+      "ticker": "INTC",
+      "asof_date": "2025-06-04",
+      "forward_trading_days": 5,
+      "forward_close_return": 0.021235,
+      "strategy_a_decision": "HOLD",
+      "strategy_b_decision": "BUY",
+      "strategy_a_correct": false,
+      "strategy_b_correct": true
+    },
+    {
+      "ticker": "INTC",
+      "asof_date": "2025-07-18",
+      "forward_trading_days": 5,
+      "forward_close_return": -0.103896,
+      "strategy_a_decision": "BUY",
+      "strategy_b_decision": "BUY",
+      "strategy_a_correct": false,
+      "strategy_b_correct": false
+    },
+    {
+      "ticker": "INTC",
+      "asof_date": "2025-08-28",
+      "forward_trading_days": 5,
+      "forward_close_return": -0.017649,
+      "strategy_a_decision": "BUY",
+      "strategy_b_decision": "BUY",
+      "strategy_a_correct": false,
+      "strategy_b_correct": false
+    },
+    {
+      "ticker": "INTC",
+      "asof_date": "2025-10-10",
+      "forward_trading_days": 5,
+      "forward_close_return": 0.017597,
+      "strategy_a_decision": "BUY",
+      "strategy_b_decision": "BUY",
+      "strategy_a_correct": true,
+      "strategy_b_correct": true
+    },
+    {
+      "ticker": "INTC",
+      "asof_date": "2025-11-21",
+      "forward_trading_days": 5,
+      "forward_close_return": 0.15971,
+      "strategy_a_decision": "BUY",
+      "strategy_b_decision": "BUY",
+      "strategy_a_correct": true,
+      "strategy_b_correct": true
+    },
+    {
+      "ticker": "INTC",
+      "asof_date": "2026-01-07",
+      "forward_trading_days": 5,
+      "forward_close_return": 0.142857,
+      "strategy_a_decision": "BUY",
+      "strategy_b_decision": "BUY",
+      "strategy_a_correct": true,
+      "strategy_b_correct": true
+    },
+    {
+      "ticker": "INTC",
+      "asof_date": "2026-02-19",
+      "forward_trading_days": 5,
+      "forward_close_return": 0.018826,
+      "strategy_a_decision": "BUY",
+      "strategy_b_decision": "BUY",
+      "strategy_a_correct": true,
+      "strategy_b_correct": true
+    },
+    {
+      "ticker": "INTC",
+      "asof_date": "2026-04-02",
+      "forward_trading_days": 5,
+      "forward_close_return": 0.23819,
+      "strategy_a_decision": "BUY",
+      "strategy_b_decision": "BUY",
+      "strategy_a_correct": true,
+      "strategy_b_correct": true
+    }
+  ]
+}

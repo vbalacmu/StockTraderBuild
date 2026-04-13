@@ -1,0 +1,40 @@
+{
+  "strategies": [
+    "Momentum Trader",
+    "Value Contrarian"
+  ],
+  "stocks_analyzed": [
+    "NVDA",
+    "TSLA",
+    "JNJ",
+    "INTC"
+  ],
+  "total_agreements": 2,
+  "total_disagreements": 2,
+  "results": [
+    {
+      "ticker": "NVDA",
+      "a_decision": "BUY",
+      "b_decision": "BUY",
+      "agree": true
+    },
+    {
+      "ticker": "TSLA",
+      "a_decision": "BUY",
+      "b_decision": "BUY",
+      "agree": true
+    },
+    {
+      "ticker": "JNJ",
+      "a_decision": "HOLD",
+      "b_decision": "BUY",
+      "agree": false
+    },
+    {
+      "ticker": "INTC",
+      "a_decision": "BUY",
+      "b_decision": "SELL",
+      "agree": false
+    }
+  ]
+}

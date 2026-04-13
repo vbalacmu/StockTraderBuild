@@ -1,0 +1,68 @@
+{
+  "ticker": "NVDA",
+  "run_date": "2026-04-12",
+  "market_data_summary": {
+    "current_price": 188.63,
+    "price_30d_ago": 186.03,
+    "pct_change_30d": 1.398,
+    "avg_daily_volume": 169634160,
+    "volatility_30d": 0.02242,
+    "moving_avg_20d": 177.4205,
+    "moving_avg_50d": 182.0722,
+    "high_52w": 207.0173,
+    "low_52w": 165.17,
+    "pct_from_52w_high": -8.882,
+    "pct_from_52w_low": 14.204,
+    "drawdown_from_90d_peak_pct": -3.538,
+    "rsi_14": 68.17,
+    "volume_trend_short_vs_long": -0.2167,
+    "last_30_daily_returns": [
+      -0.041646,
+      0.029855,
+      -0.013317,
+      0.016606,
+      0.001639,
+      -0.030108,
+      0.027162,
+      0.011607,
+      0.006874,
+      -0.015535,
+      -0.01578,
+      0.016477,
+      -0.007041,
+      -0.00841,
+      -0.0102,
+      -0.032818,
+      0.017024,
+      -0.002505,
+      0.019863,
+      -0.041639,
+      -0.021724,
+      -0.014028,
+      0.055882,
+      0.007741,
+      0.009331,
+      0.001409,
+      0.00259,
+      0.022347,
+      0.010051,
+      0.025665
+    ]
+  },
+  "strategy_a": {
+    "name": "Momentum Trader",
+    "decision": "BUY",
+    "confidence": 8,
+    "justification": "current_price (188.63) is above moving_avg_20d (177.4205) and moving_avg_50d (182.0722), and pct_change_30d (1.398) is positive. volume_trend_short_vs_long (-0.2167) is not strongly negative, so we prefer to buy."
+  },
+  "strategy_b": {
+    "name": "Value Contrarian",
+    "decision": "BUY",
+    "confidence": 8,
+    "justification": "drawdown_from_90d_peak_pct is -3.538, indicating a sharp retreat from recent peak; rsi_14 is 68.17, which is elevated risk for fading longs, and pct_change_30d is 1.398, showing a clearly negative trend."
+  },
+  "evaluator": {
+    "agents_agree": true,
+    "analysis": "Both strategies agree on the decision to BUY due to the presence of elevated risk indicators (rsi_14) and a sharp retreat from recent peak (drawdown_from_90d_peak_pct). Additionally, both frameworks consider the positive trend in pct_change_30d. This consensus is likely driven by the emphasis on identifying overbought conditions and taking contrarian positions. The Momentum Trader's focus on technical indicators aligns with the Value Contrarian's reliance on fundamental metrics, resulting in a harmonized decision."
+  }
+}

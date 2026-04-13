@@ -1,0 +1,68 @@
+{
+  "ticker": "JNJ",
+  "run_date": "2026-04-12",
+  "market_data_summary": {
+    "current_price": 238.46,
+    "price_30d_ago": 242.99,
+    "pct_change_30d": -1.864,
+    "avg_daily_volume": 7468210,
+    "volatility_30d": 0.009844,
+    "moving_avg_20d": 239.896,
+    "moving_avg_50d": 240.2364,
+    "high_52w": 248.56,
+    "low_52w": 183.8491,
+    "pct_from_52w_high": -4.063,
+    "pct_from_52w_low": 29.704,
+    "drawdown_from_90d_peak_pct": -4.063,
+    "rsi_14": 56.86,
+    "volume_trend_short_vs_long": -0.1157,
+    "last_30_daily_returns": [
+      0.020372,
+      0.000523,
+      -0.007282,
+      -0.005876,
+      -0.023115,
+      0.003213,
+      0.00911,
+      0.004617,
+      -0.002954,
+      -0.00391,
+      -0.002148,
+      0.006915,
+      -0.020889,
+      -0.003486,
+      0.001349,
+      -0.009386,
+      0.000212,
+      -0.000637,
+      0.019807,
+      -0.002876,
+      0.005058,
+      0.008484,
+      0.008042,
+      -0.001309,
+      -0.004424,
+      -0.008517,
+      -0.010624,
+      0.012122,
+      4.1e-05,
+      -0.01181
+    ]
+  },
+  "strategy_a": {
+    "name": "Momentum Trader",
+    "decision": "HOLD",
+    "confidence": 6,
+    "justification": "current_price ($238.46) is above moving_avg_20d ($239.896), but pct_change_30d (-1.864) is negative, and volume_trend_short_vs_long (-0.1157) is slightly negative, indicating a weak trend. recent daily returns skew negative with -0.01181 on the last day."
+  },
+  "strategy_b": {
+    "name": "Value Contrarian",
+    "decision": "BUY",
+    "confidence": 8,
+    "justification": "drawdown_from_90d_peak_pct is -4.063, which is about -12% or worse, indicating a sharp retreat from the recent peak. Also, pct_change_30d is -1.864, clearly negative, suggesting capitulation/fear."
+  },
+  "evaluator": {
+    "agents_agree": false,
+    "analysis": "Strategy A's decision to HOLD is driven by its analysis of the current price being above the moving average and the weak trend indicated by volume trends. In contrast, Strategy B's decision to BUY is based on a more extreme view, recognizing a sharp retreat from the recent peak and negative percentage change over the past 30 days, which suggests capitulation or fear. The disagreement highlights different philosophical approaches: A prioritizes stability and current price levels, while B emphasizes extreme market movements and value opportunities."
+  }
+}

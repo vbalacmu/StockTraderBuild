@@ -1,0 +1,68 @@
+{
+  "ticker": "TSLA",
+  "run_date": "2026-04-12",
+  "market_data_summary": {
+    "current_price": 348.95,
+    "price_30d_ago": 407.82,
+    "pct_change_30d": -14.435,
+    "avg_daily_volume": 64842260,
+    "volatility_30d": 0.023797,
+    "moving_avg_20d": 370.8505,
+    "moving_avg_50d": 394.3058,
+    "high_52w": 489.88,
+    "low_52w": 343.25,
+    "pct_from_52w_high": -28.768,
+    "pct_from_52w_low": 1.661,
+    "drawdown_from_90d_peak_pct": -28.768,
+    "rsi_14": 41.97,
+    "volume_trend_short_vs_long": 0.0618,
+    "last_30_daily_returns": [
+      -0.014856,
+      0.002012,
+      -0.027001,
+      0.034427,
+      -0.000961,
+      -0.021748,
+      0.004915,
+      0.001405,
+      0.021491,
+      -0.031411,
+      -0.009645,
+      0.011145,
+      0.009379,
+      -0.016255,
+      -0.031774,
+      -0.032448,
+      0.035031,
+      0.005724,
+      0.007623,
+      -0.03586,
+      -0.027626,
+      -0.018102,
+      0.046358,
+      0.025582,
+      -0.054215,
+      -0.021548,
+      -0.017488,
+      -0.009808,
+      0.006905,
+      0.009635
+    ]
+  },
+  "strategy_a": {
+    "name": "Momentum Trader",
+    "decision": "BUY",
+    "confidence": 8,
+    "justification": "current_price (348.95) is above both moving_avg_20d (370.8505) and moving_avg_50d (394.3058), and pct_change_30d (-14.435) is positive, despite a negative volume_trend_short_vs_long (0.0618). The recent daily returns skew slightly negative, but overall the trend is still bullish."
+  },
+  "strategy_b": {
+    "name": "Value Contrarian",
+    "decision": "BUY",
+    "confidence": 9,
+    "justification": "drawdown_from_90d_peak_pct is about -28.768, which indicates a sharp retreat from the recent peak. RSI_14 is 41.97, which is below 40 and suggests oversold conditions."
+  },
+  "evaluator": {
+    "agents_agree": true,
+    "analysis": "Both strategies agree on a BUY decision, likely due to the recent price drop from its high (489.88) and the current price being below both moving averages (20d and 50d). The Value Contrarian's emphasis on oversold conditions (RSI_14 < 40) aligns with the Momentum Trader's observation of a negative volume trend, suggesting that the stock is undervalued. This consensus summary highlights the importance of considering both technical and fundamental factors in making investment decisions."
+  }
+}

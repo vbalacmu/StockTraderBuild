@@ -1,0 +1,68 @@
+{
+  "ticker": "INTC",
+  "run_date": "2026-04-12",
+  "market_data_summary": {
+    "current_price": 62.38,
+    "price_30d_ago": 47.98,
+    "pct_change_30d": 30.013,
+    "avg_daily_volume": 102888600,
+    "volatility_30d": 0.046105,
+    "moving_avg_20d": 48.181,
+    "moving_avg_50d": 47.2076,
+    "high_52w": 62.38,
+    "low_52w": 33.62,
+    "pct_from_52w_high": 0.0,
+    "pct_from_52w_low": 85.544,
+    "drawdown_from_90d_peak_pct": 0.0,
+    "rsi_14": 80.35,
+    "volume_trend_short_vs_long": 0.2599,
+    "last_30_daily_returns": [
+      0.0033,
+      -0.002412,
+      -0.052747,
+      0.057541,
+      0.008118,
+      -0.05506,
+      0.049747,
+      0.026327,
+      0.025652,
+      -0.056899,
+      0.011492,
+      -0.000219,
+      -0.03715,
+      0.022015,
+      0.025539,
+      -0.050022,
+      0.003191,
+      0.001136,
+      0.070813,
+      -0.065282,
+      -0.021995,
+      -0.04498,
+      0.071377,
+      0.088375,
+      0.048928,
+      0.00794,
+      0.041946,
+      0.114156,
+      0.046989,
+      0.010693
+    ]
+  },
+  "strategy_a": {
+    "name": "Momentum Trader",
+    "decision": "BUY",
+    "confidence": 8,
+    "justification": "current_price (62.38) is above both moving_avg_20d (48.181) and moving_avg_50d (47.2076), and pct_change_30d (30.013) is positive. Volume trend short vs long is 0.2599, which is not strongly negative."
+  },
+  "strategy_b": {
+    "name": "Value Contrarian",
+    "decision": "SELL",
+    "confidence": 8,
+    "justification": "The stock is still within roughly 8% of its 52-week high (pct_from_52w_high = 0.0), indicating it's still extended, and the RSI is at 80.35, which is in a stretched/greed zone. Despite this, the recent price action shows a sharp retreat from its peak, with drawdown_from_90d_peak_pct being about -12% or worse."
+  },
+  "evaluator": {
+    "agents_agree": false,
+    "analysis": "Strategy A and Strategy B disagree on the decision due to behavioral tension. Strategy A's momentum approach is driven by the stock's recent price strength (current_price above moving averages) and moderate volume trend, leading it to recommend a BUY. In contrast, Strategy B's value contrarian approach emphasizes the stock's extended position relative to its 52-week high and the RSI's stretched zone, leading it to recommend a SELL. The disagreement highlights the different philosophies of each strategy: A prioritizes recent price action, while B considers the broader market context and technical indicators."
+  }
+}
