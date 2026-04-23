@@ -64,4 +64,4 @@ Writes `outputs/backtest.json`. See `main.py --help` for lookback and horizon fl
 | `src/backtest.py` | Historical backtest |
 | `prompts/` | Strategy A, B, and evaluator prompts |
 | `outputs/` | Per-ticker JSON, `summary.json`, optional `backtest.json` |
-| `report/` | `report.pdf`, `ai_use_appendix.pdf` |
+| `report/` | `report.pdf` |
